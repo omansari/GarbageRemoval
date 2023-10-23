@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your schedule</title>
+    <link rel="stylesheet" href="./static/style_scheduleing.css">
+</head>
+<body>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/dashboard">Home</a>
+        <a href="/reportjoincleanup">Report or join a clean up</a>
+        <a href="/scheduleing">Scheduled/Schedule Clean ups</a>
+        <a href="/logout">Logout</a>
+    </div>
+  
+    
+    <button id="openbtn" class="openbtn" type="button" onclick="openNav()">=</button>
+
+    
+    
+    <script src="./static/sidebar.js"></script>
+  
+    <h1 class="scheduleTitle">Your garbage calender:</h1>
+
+    <img src="./static/pictures/calendarv2.png" height="295" width="740" class="calenderimg">
+    <!-- <img src="./static/pictures/spacer.png" width="1100" height="15" class="spacer"> -->
+    <h1 class="placetoschedulefortitle">Places you can schedule clean ups for:</h1>
+    <div class="listcontainer">
+        <div class="localist">
+            <ul style="font-family: bold;">Locally:</ul>
+            <ul>
+                <li>Los Altos, CA</li>
+                <li>Palo Alto, CA</li>
+            </ul>
+        </div>
+
+        <div class="globallist">
+            <ul style="font-family: bold;">Globally:</ul>
+            <ul>
+                <li>Taltal, Chile</li>
+                <li>Yakima, USA</li>
+                <!-- <button><</button> page <textarea placeholder="1" maxlength="7"></textarea> of 1 <button>></button> -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="localist">
+        <div class="pagescroll">
+            <button><</button> page <textarea placeholder="1" maxlength="7"></textarea> of 1 <button>></button>
+        </div>
+    </div>
+
+    <!-- <img src="./static/pictures/spacer.png" width="1100" height="15" class="spacer"> -->
+    <h1 class="placetoschedulefortitle">Your reported clean ups:</h1>
+    <div class="listcontainer">
+        <div class="mycleanups">
+            <li>Los Altos, CA</li>
+            <li>Sacramento, CA</li>
+        </div>
+
+        <!-- <div class="invis">
+            <button></button> page <textarea maxlength="0" readonly="true"></textarea> of {last page} <button></button>
+        </div> -->
+    </div>
+
+    <div class="localist">
+        <div class="pagescroll">
+            <button><</button> page <textarea placeholder="1" maxlength="7"></textarea> of 1 <button>></button>
+        </div>
+    </div>
+
+
+</body>
+</html>

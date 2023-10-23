@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+
+    <div id="over" style="text-align: center;">
+        <h1 style="font-size: 75px; padding-bottom: 10px;">Garbageremoval.com</h1>
+    </div>
+
+    <div id="over" style="position:top; width:100%; height:100%">
+        <!-- <img src="./static/pictures/garbage.jpg" width="650" height="650"> -->
+    </div>
+
+    <div class="container">
+        <div class="image">
+            <img src="./static/pictures/turtle.jpg" height="145" width="300">
+        </div>
+        <div class="text">
+            <h1 style="background-color: white;">What we do:</h1>
+            <h1 style="font-size: 18px; background-color: white;">Our mission is to clean up trash from around the world to promote a healthier place for everyone.</h1>
+        </div>
+    </div>
+
+    <div class="advert">
+        <span style="font-size: 19px; background-color: white;">And best of all, our services are FREE!</span>
+    </div>
+
+    <!-- write rest of code above comment line-->
+
+    <div class="d-flex justify-content-around" style="width: 1050px; margin-left: auto; margin-right: auto;">
+
+        <form action="/register" method="post" class="col-4 p-4 bg-dark text-light" style="height: 505px;">
+            <h2 class="text-primary" style="font-size: 25px;">Register</h2>
+            {% with messages= get_flashed_messages(category_filter=['register'])%}
+            {%if messages%}
+            <div class="alert alert-danger" role="alert">
+                <strong>Flash ahhhhhhhhhh</strong>
+                {%for message in messages%}
+                <p>{{message}}</p>
+                {%endfor%}
+            </div>
+            {%endif%}
+            {%endwith%}
+            <div class="form-group">
+                <label for="first_name" style="height: 0px;">First name</label>
+                <input placeholder="first_name" type="text" name="first_name" class="form-control">
+            </div> 
+            <div class="form-group">
+                <label for="last_name" style="height: 0px;">Last name</label>
+                <input placeholder="last_name" type="text" name="last_name" class="form-control">
+            </div> 
+            <div class="form-group">
+                <label for="email" style="height: 0px;">Email</label>
+                <input placeholder="email" type="text" name="email" class="form-control">
+            </div> 
+            <div class="form-group">
+                <label for="password" style="height: 0px;">Password</label>
+                <input placeholder="password" type="password" name="password" class="form-control">
+            </div> 
+            <div class="form-group">
+                <label for="confirm" style="height: 0px;">Confirm Password</label>
+                <input placeholder="confirm" type="password" name="confirm" class="form-control">
+            </div> 
+            <input type="submit" value="Register" class="btn btn-primary">
+        </form>
+
+        <form action="/login" method="post" class="col-4 p-4 bg-dark text-light" style="height: 300px;">
+            <h2 class="text-sucess" style="font-size: 25px;">Login</h2>
+            {% with messages= get_flashed_messages(category_filter=['register'])%}
+            {%if messages%}
+            <div class="alert alert-danger" role="alert">
+                <strong>Flash ahhhhhhhhhh</strong>
+                {%for message in messages%}
+                <p>{{message}}</p>
+                {%endfor%}
+            </div>
+            {%endif%}
+            {%endwith%}
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input placeholder="email" type="text" name="email" class="form-control">
+            </div> 
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input placeholder="password" type="password" name="password" class="form-control">
+            </div> 
+            <input type="submit" value="Login" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+</html>

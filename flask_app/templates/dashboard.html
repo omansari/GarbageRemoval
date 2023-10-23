@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./static/style_dashboard.css">
+
+</head>
+<body>
+
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="/dashboard">Home</a>
+      <a href="/reportjoincleanup">Report or join a clean up</a>
+      <a href="/scheduleing">Scheduled/Schedule Clean ups</a>
+      <a href="/logout">Logout</a>
+    </div>
+
+    <button id="openbtn" class="openbtn" type="button" onclick="openNav()">=</button>
+
+    <div>
+      <h1 id="welcome" align="center">Welcome {{user.first_name}}!</h1>
+      <!-- <script>
+        function httpGet(theUrl) {
+          let xmlHttpReq = new XMLHttpRequest();
+          xmlHttpReq.open("GET", theUrl, false);
+          xmlHttpReq.send(null);
+          return xmlHttpReq.responseText;
+        }
+        var res = httpGet("http://127.0.0.1:5000/name");
+        document.getElementById("welcome").innerHTML = 'Welcome ' + res + '!'
+      </script> -->
+    </div>
+
+    <!-- <iframe src="" style="height: 300px; width: 500px;"></iframe> -->
+
+    <div class="maps">
+        <h1 class="local">Cleans ups nearby</h1>
+        <div class="row">
+            <div class="column">
+              <img src="./static/pictures/map1.png" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="./static/pictures/map2.png" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="./static/pictures/map3.png" style="width:100%">
+            </div>
+          </div>
+    </div>
+
+    <script src="./static/sidebar.js"></script>
+</body>
+</html>

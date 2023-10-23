@@ -1,0 +1,40 @@
+
+
+#over img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+body {
+    background-image: url('/static/pictures/garbage.jpg');
+    background-repeat: no-repeat;
+    background-size: 900px;
+    background-position: center center;
+}
+
+
+.container {
+    padding-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.image{
+    padding-left: 310px;
+    align-content: center;
+}
+
+.text {
+    padding-left: 25px;
+    font-size: 25px;
+    padding-right: auto;
+}
+
+.advert {
+    text-align: center;
+    padding-bottom: 15px;
+}
+

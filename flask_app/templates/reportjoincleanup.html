@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report or join a clean up</title>
+    <link rel="stylesheet" href="./static/style_reportjoincleanup.css">
+</head>
+<body>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/dashboard">Home</a>
+        <a href="/reportjoincleanup">Report or join a clean up</a>
+        <a href="/scheduleing">Scheduled/Schedule Clean ups</a>
+        <a href="/logout">Logout</a>
+    </div>
+  
+    
+    <button id="openbtn" class="openbtn" type="button" onclick="openNav()">=</button>
+    
+    <script src="./static/sidebar.js"></script>
+  
+    <h1 class="title">Report or join a clean up here</h1>
+    <div class="box">
+        <span class="text">Click on the place where you want to report/join!</span>
+        <img src="./static/pictures/reportjoinmap.png" class="mapimg" height="425" width="750" style="vertical-align: middle;">
+    </div>
+    
+    <div class="checkboxes">
+        <label class="check1label"><input type="checkbox"/> Hide 'reported' markers</label>
+        <label class="check1label"><input type="checkbox"/> Hide 'join a clean up' markers</label>
+    </div>
+
+    <div class="buttons">
+        <button id="Report" class="button" type="button" onclick="" style="font-size: 25px; margin-right: 25px;">Report</button>
+        <button id="Join" class="button" type="button" onclick="" style="font-size: 25px; margin-left: 25px;">Join</button>
+    </div>
+
+</body>
+</html>
